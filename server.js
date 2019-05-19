@@ -17,7 +17,7 @@ app.use(express.static('public'));
 // }
 if (process.env.MONGODB_URI) {
   // This executes if being connected in Heroku App
-  mongoose.connect(process.env.MONGO_URI);
+  mongoose.connect(process.env.MONGODB_URI);
 } else {
   // Connect to the Mongo DB
   mongoose.connect("mongodb://localhost/members", { useNewUrlParser: true });
