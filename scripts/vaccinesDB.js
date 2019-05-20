@@ -8,7 +8,7 @@ mongoose.connect(
 
 const vaccineSeed = [
     {
-        name: 'Influenza inactivate (IIV) ',
+        name: "Influenza inactivate (IIV) ",
         needed: true,
         age: 125,
         gender: null,
@@ -22,31 +22,11 @@ const vaccineSeed = [
         conditions: true,
         otherFactors: true,
         zoster: true,
-        dose: '1 dose annually',
+        dose: "1 dose annually",
         date: new Date(Date.now())
     },
     {
-        name: 'Influenza recombinant (RIV) ',
-        needed: true,
-        age: 125,
-        gender: null,
-        pregnancy: true,
-        travelling: true,
-        immunity: true,
-        hiv: true,
-        cd4below200: true,
-        dormitory: true,
-        healthCareWorker: true,
-        conditions: true,
-        otherFactors: true,
-        zoster: true,
-        pregnancy: true,
-        cd4below200: true,
-        dose: '1 dose annually',
-        date: new Date(Date.now())
-    },
-    {
-        name: 'Tetanus, diptheria, pertussis (TDAP) ',
+        name: "Influenza recombinant (RIV) ",
         needed: true,
         age: 125,
         gender: null,
@@ -62,11 +42,31 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '1 dose Tdap, the Td booster every 10yrs',
+        dose: "1 dose annually",
         date: new Date(Date.now())
     },
     {
-        name: 'Measles, mumps, rubella (MMR) ',
+        name: "Tetanus, diptheria, pertussis (TDAP) ",
+        needed: true,
+        age: 125,
+        gender: null,
+        pregnancy: true,
+        travelling: true,
+        immunity: true,
+        hiv: true,
+        cd4below200: true,
+        dormitory: true,
+        healthCareWorker: true,
+        conditions: true,
+        otherFactors: true,
+        zoster: true,
+        pregnancy: true,
+        cd4below200: true,
+        dose: "1 dose Tdap, the Td booster every 10yrs",
+        date: new Date(Date.now())
+    },
+    {
+        name: "Measles, mumps, rubella (MMR) ",
         needed: true,
         age: 65,
         gender: null,
@@ -82,11 +82,11 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '1 or 2 doses depending on indication (if born in 1957 or later)',
+        dose: "1 or 2 doses depending on indication (if born in 1957 or later)",
         date: new Date(Date.now())
     },
     {
-        name: 'Varicella (VAR) ',
+        name: "Varicella (VAR) ",
         needed: true,
         age: 40,
         gender: null,
@@ -102,11 +102,11 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '2 doses (if born in 1980 or later',
+        dose: "2 doses (if born in 1980 or later",
         date: new Date(Date.now())
     },
     {
-        name: 'Zoster (RZV (preferred) ',
+        name: "Zoster (RZV (preferred) ",
         needed: true,
         age: 125,
         gender: null,
@@ -127,7 +127,7 @@ const vaccineSeed = [
 
     },
     {
-        name: 'Zoster live (ZVL)',
+        name: "Zoster live (ZVL)",
         needed: true,
         age: 125,
         gender: null,
@@ -148,7 +148,7 @@ const vaccineSeed = [
 
     },
     {
-        name: 'Human papillomavirus (HPV) ',
+        name: "Human papillomavirus (HPV) ",
         needed: true,
         age: 21,
         gender: null,
@@ -164,11 +164,11 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '2-3 doses depending on age at initial vaccination',
+        dose: "2-3 doses depending on age at initial vaccination",
         date: new Date(Date.now())
     },
     {
-        name: 'Human papillomavirus (HPV) ',
+        name: "Human papillomavirus (HPV) ",
         needed: true,
         age: 30,
         gender: null,
@@ -184,11 +184,11 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '2-3 doses depending on age at initial vaccination',
+        dose: "2-3 doses depending on age at initial vaccination",
         date: new Date(Date.now())
     },
     {
-        name: 'Pneumococcal conjugte (PCV13) ',
+        name: "Pneumococcal conjugte (PCV13) ",
         needed: true,
         age: 125,
         gender: null,
@@ -204,11 +204,11 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '1 dose',
+        dose: "1 dose",
         date: new Date(Date.now())
     },
     {
-        name: 'Pneumococcal polysaccharide (PPSV23) ',
+        name: "Pneumococcal polysaccharide (PPSV23) ",
         needed: true,
         age: 125,
         gender: null,
@@ -224,11 +224,11 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '1 dose',
+        dose: "1 dose",
         date: new Date(Date.now())
     },
     {
-        name: 'Hepatitis A (HepA) ',
+        name: "Hepatitis A (HepA) ",
         needed: true,
         age: 125,
         gender: null,
@@ -244,11 +244,11 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '2 or 3 doses depending on vaccine',
+        dose: "2 or 3 doses depending on vaccine",
         date: new Date(Date.now())
     },
     {
-        name: 'Hepatitis B (HepB) ',
+        name: "Hepatitis B (HepB) ",
         needed: true,
         age: 125,
         gender: null,
@@ -264,11 +264,11 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '2 or 3 doses depending on vaccine',
+        dose: "2 or 3 doses depending on vaccine",
         date: new Date(Date.now())
     },
     {
-        name: 'Meningococcal A, C, W, Y (MenACWY) ',
+        name: "Meningococcal A, C, W, Y (MenACWY) ",
         needed: true,
         age: 125,
         gender: null,
@@ -284,11 +284,11 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '1 or 2 doses depending on indication',
+        dose: "1 or 2 doses depending on indication",
         date: new Date(Date.now())
     },
     {
-        name: 'Meningococcal B (MenB) ',
+        name: "Meningococcal B (MenB) ",
         needed: true,
         age: 125,
         gender: null,
@@ -304,11 +304,11 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '2 or 3 doses depending on indication',
+        dose: "2 or 3 doses depending on indication",
         date: new Date(Date.now())
     },
     {
-        name: 'Haemophilus influenzae type b (Hib) ',
+        name: "Haemophilus influenzae type b (Hib) ",
         needed: true,
         age: 125,
         gender: null,
@@ -324,7 +324,7 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: '1 or 3 doses depending on indication',
+        dose: "1 or 3 doses depending on indication",
         riskfactors: true,
         date: new Date(Date.now())
     }

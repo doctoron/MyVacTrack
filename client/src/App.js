@@ -8,11 +8,12 @@ import {
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import PrivateRoute from './components/Auth/PrivateRoute';
-import PVRec from './Pages/PVRec';
+// import PVRec from './Pages/PVRec';
+import PVRec2 from './Pages/PVRec';
 import Register from './components/Register';
 import Login from './components/LoginModal/Login';
 import MenuBar from './components/MenuBar';
-// import FluidJumbo from './components/FluidJumbo';
+import FluidJumbo from './components/FluidJumbo';
 // import RoundAbout from './components/RoundAbout';
 // import { Jumbotron, Button, Alert, Fade } from 'reactstrap';
 
@@ -61,7 +62,9 @@ class App extends Component {
               <Route exact path="/" component={Login} />
               <Route exact path="/login" component={() => <Login history={this.props.history} showModal={this.state.isOpen} toggle={this.toggle} />} />
               <Route path="/register" component={Register} />
-              <PrivateRoute path="/private" component={PVRec} />
+              <Route path="/test" component={PVRec2} />
+              {/* <PrivateRoute path="/private" component={PVRec} /> */}
+              <PrivateRoute path="/private" component={PVRec2} />
             </Switch>
 
           </div>

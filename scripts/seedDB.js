@@ -13,7 +13,17 @@ const userSeed = [
     date: new Date(Date.now())
   },
   {
+    email: "denise.antonio@google.com",
+    password: "vaccineswork",
+    date: new Date(Date.now())
+  },
+  {
     email: "ivonne.lawless@google.com",
+    password: "vaccineswork",
+    date: new Date(Date.now())
+  },
+  {
+    email: "michael.pacuzzi@google.com",
     password: "vaccineswork",
     date: new Date(Date.now())
   },

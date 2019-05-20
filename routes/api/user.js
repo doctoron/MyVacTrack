@@ -3,7 +3,7 @@ const Users = require("../../controllers/userController");
 
 // api/users/
 router.route("/")
-.get(Users.create)
+.get(Users.findUser)
 .put(Users.findUser);
 //   .post(users.create)
 

@@ -1,11 +1,11 @@
 const router = require("express").Router();
 const Members = require("../../controllers/memberController");
 
-// Matches with "/api/members"
+// /api/members
 router.route("/")
-  .post(Members.create)
-  .get(Members.findUser);
-  // .post(Members.findOne)
+  .get(Members.findUser)
+  .put(Members.findUser);
+// .post(Members.findOne)
 
 // Matches with "/api/Members/:id"
 // router.route("/:id")

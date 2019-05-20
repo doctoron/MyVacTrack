@@ -1,4 +1,4 @@
-const Users = require('../models/Users');
+const Users = require('../models/users');
 // Defining methods for the userController
 module.exports = {
     findUser: (req, res) => {
@@ -14,17 +14,6 @@ module.exports = {
                 res.json(data);
             }
         });
-        // .then(data => {
-
-        //     )
-        // .catch(err => res.status(400).json(err));
-        // , function(err, user) {
-        //     console.log('the user', user);
-        //     if(err) {
-        //         return res.status(400).json({ msg: 'username/password is invalid'});
-        //     }
-        //     res.json(user);
-        // };
     },
     findById: (req, res) => {
         Users
@@ -32,14 +21,8 @@ module.exports = {
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     },
-    // findById: (req, res) => {
-    //     User
-    //         .findById(req.params.id)
-    //         .then(dbModel => res.json(dbModel))
-    //         .catch(err => res.status(422).json(err));
-    // },
     create: (req, res) => {
-        console.log('rea.body', req.body);
+        console.log('res.body', req.body);
         Users
             .create(req.body)
             .then(dbModel => res.json(dbModel))
