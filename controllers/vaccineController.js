@@ -5,6 +5,7 @@ module.exports = {
         console.log('Direct body coming in', req.body);
         Vaccines.find({
             // name: req.body.name,
+            needed: req.body.needed,
             age: req.body.age
         }).then((data) => {
             console.log('This is what was returned', data);
