@@ -4,8 +4,8 @@ const Members = require("../../controllers/memberController");
 // /api/members
 router.route("/")
   .get(Members.findUser)
-  .put(Members.findUser);
-// .post(Members.findOne)
+  .put(Members.findUser)
+  .post(Members.create);
 
 // Matches with "/api/Members/:id"
 // router.route("/:id")

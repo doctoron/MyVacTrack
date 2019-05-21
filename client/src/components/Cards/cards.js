@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-  Card, Button, CardImg, CardTitle, CardText, CardGroup,
+  Card, Button, CardImg, CardTitle, CardText,
   CardSubtitle, CardBody
 } from 'reactstrap';
-import image1 from '../../img/jump.jpg'
-import image2 from '../../img/jump.jpg'
-import image3 from '../../img/jump.jpg'
+// import image1 from '../../img/jump.jpg'
+// import image2 from '../../img/jump.jpg'
+// import image3 from '../../img/jump.jpg'
 
 const Cards = (props) => {
   return (

@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
+import './App.css';
 import {
   BrowserRouter as Router,
   Route,
-  // Link,
   Switch,
   // Redirect
 } from "react-router-dom";
-import MenuBar from './components/MenuBar';
-import Login from './components/LoginModal/Login';
+import 'bootstrap/dist/css/bootstrap.css';
 import PrivateRoute from './components/Auth/PrivateRoute';
+// import PVRec from './Pages/PVRec';
 import PVRec2 from './Pages/PVRec';
 import Register from './components/Register';
+import Login from './components/LoginModal/Login';
+import MenuBar from './components/MenuBar';
+import FluidJumbo from './components/FluidJumbo';
 // import RoundAbout from './components/RoundAbout';
 // import { Jumbotron, Button, Alert, Fade } from 'reactstrap';
 
@@ -24,7 +26,7 @@ class App extends Component {
       isOpen: false,
       authenticated: false,
       private: false,
-      // redirect: false
+      redirect: false
     }
     this.connectToServer = this.connectToServer.bind(this);
     this.toggle = this.toggle.bind(this);
@@ -52,7 +54,7 @@ class App extends Component {
 
   render () {
     return (
-      <div className="container">
+      <div className="App">
         <Router>
           <div>
             <MenuBar auth={this.state.authenticated} toggle={this.toggle} />

@@ -12,9 +12,9 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Serve up static assets (usually on heroku) Production mode
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(path.join(_dirname, "client/build")));
-// }
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(_dirname, "client/build")));
+}
 if (process.env.MONGODB_URI) {
   // This executes if being connected in Heroku App
   mongoose.connect(process.env.MONGODB_URI);

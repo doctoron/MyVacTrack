@@ -31,13 +31,12 @@ class MenuBar extends React.Component {
   logOut (e) {
     e.preventDefault();
     sessionStorage.removeItem('authenticated');
-    // console.log(this.props)
     this.props.toggle()
     
     this.setState=({
       isOpen: !this.state.isOpen
     })
-    // How do I return to the login to start over here?
+    // Return to the login to start over here
     this.props.toggle();
     this.props.history.push('/');
   }
@@ -47,7 +46,6 @@ class MenuBar extends React.Component {
   }
 
   render () {
-   //console.log(this.props)
     return (
       <div>
         <Navbar color="light" light expand="md">

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Redirect } from "react-router-dom"
 import Axios from 'axios';
 import RoundAbout from '../RoundAbout/RoundAbout';
-// import Register from  '../Register'
 import {
   Button,
   Form,
@@ -67,7 +66,6 @@ export default class Login extends Component {
     const registerData = {
       email: this.state.email,
       password: this.state.password
-      // username: this.state.username
     }
     console.log('Captured login data', registerData);
 

@@ -29,6 +29,5 @@ onCheckboxBtnClick(selected) {
       </div>
     );
   }
-}
 
 export default Example;
