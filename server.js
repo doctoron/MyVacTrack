@@ -1,4 +1,5 @@
 const express = require("express");
+const favicon = require('express-favicon');
 const app = express();
 const path = require("path");
 const routes = require("./routes");
@@ -6,6 +7,7 @@ const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 
 // Define middleware here
+app.use(favicon(__dirname + '/build/favicon.ico'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
