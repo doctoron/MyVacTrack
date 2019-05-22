@@ -3,7 +3,7 @@ import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  CarouselIndicators,
+  // CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
 
@@ -15,9 +15,8 @@ const items = [
   {
     src: image1,
     altText: 'VackTRACK Logo',
-    caption: '',
-    captionText: '#vaccineswork'
-
+    caption: '#vaccineswork',
+    captionText: ''
   },
   {
     src:  image2,
@@ -116,11 +115,11 @@ class roundAbout extends Component {
           next={this.next}
           previous={this.previous}
         >
-          <CarouselIndicators
+          {/* <CarouselIndicators
             items={items}
             activeIndex={activeIndex}
             onClickHandler={this.goToIndex}
-          />
+          /> */}
           {slides}
           <CarouselControl direction="prev"
             directionText="Previous" onClickHandler={this.previous}

@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-  Card, 
-  Button, 
-  CardTitle, 
-  CardText, 
-  Row, 
+  Card,
+  Button,
+  CardTitle,
+  CardText,
+  Row,
   Col
 } from 'reactstrap';
 // import image1 from '../../img/puzzle-sm.jpg'
@@ -15,17 +15,19 @@ const Cards = (props) => {
   return (
     <Row>
       <Col sm="6">
-        <Card body>
+        {/* <Card body style={{backgroundColor: '#008080'}} > */}
+        <Card body >
           <CardTitle>What Vaccines do YOU need?</CardTitle>
           <CardText></CardText>
-          <Button href="https://www2.cdc.gov/nip/adultimmsched/" target="_blank">Take the Quiz</Button>
+          <Button color="success" href="https://www2.cdc.gov/nip/adultimmsched/" target="_blank">Take the CDC Quiz</Button>
+          {/* <Link to={vaccinesList}>Take the Quiz</Link> */}
         </Card>
       </Col>
       <Col sm="6">
         <Card body>
-          <CardTitle>What Other Vaccines do YOU need?</CardTitle>
+          <CardTitle>WHO Know What Works?</CardTitle>
           <CardText></CardText>
-          <Button href="http://apps.who.int/worldimmunizationweek/" target="_blank">Test Your Knowledge</Button>
+          <Button color="info" href="http://apps.who.int/worldimmunizationweek/" target="_blank">Test Your Knowledge</Button>
         </Card>
       </Col>
     </Row>

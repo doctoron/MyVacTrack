@@ -22,7 +22,7 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: (req, res) => {
-    console.log('rea.body', req.body);
+    console.log('req.body', req.body);
     Members
       .create(req.body)
       .then(dbModel => res.json(dbModel))
