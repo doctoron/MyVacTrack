@@ -10,8 +10,7 @@ import {
     FormText,
     ListGroup,
     ListGroupItem,
-    Card,
-    Fluidjumbo
+    Card
 }
     from 'reactstrap';
 import Pregnancy from './Pregnancy';
@@ -71,7 +70,6 @@ export default class Register extends React.Component {
             .then(results => {
                 console.log('Form Submitted:', res.data);
             })
-        <Redirect to="/test" />
     }
 
     onSubmit (e) {
