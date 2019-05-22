@@ -19,9 +19,9 @@ const items = [
     captionText: ''
   },
   {
-    src:  image2,
+    src: image2,
     altText: 'Immunization Puzzle',
-    caption:  '#vaccineswork',
+    caption: '#vaccineswork',
     captionText: ''
   },
   {
@@ -107,6 +107,24 @@ class roundAbout extends Component {
                 color: #20c997;
                 text-shadow: 2px 2px black;
               }
+              img {
+                max-width: 100%;
+                width: auto   9;
+                height: auto;
+                vertical-align: middle;
+                border: 0;
+                -ms-interpolation-mode: bicubic;
+                object-fit: contain;
+              }
+              .carousel img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+                height: auto;
+                height: 500px;
+              // max-width: none;
+              // }
               `
           }
         </style>

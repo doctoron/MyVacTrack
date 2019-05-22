@@ -25,7 +25,7 @@ const Cards = (props) => {
       </Col>
       <Col sm="6">
         <Card body>
-          <CardTitle>WHO Know What Works?</CardTitle>
+          <CardTitle>WHO Knows What Really Works?</CardTitle>
           <CardText></CardText>
           <Button color="info" href="http://apps.who.int/worldimmunizationweek/" target="_blank">Test Your Knowledge</Button>
         </Card>
