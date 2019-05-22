@@ -1,4 +1,4 @@
-const Users = require('../models/users');
+const Users = require('../models/Users');
 // Defining methods for the userController
 module.exports = {
     findUser: (req, res) => {
