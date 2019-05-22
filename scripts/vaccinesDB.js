@@ -122,7 +122,7 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: "",
+        dose: "2 doses for adults 50 or > who lack documentation or evidence of past infection",
         date: new Date(Date.now())
 
     },
@@ -143,12 +143,12 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: "",
+        dose: "1 dose for adults 60 or >  who lack documentation or evidence of past infection",
         date: new Date(Date.now())
 
     },
     {
-        name: "Human papillomavirus (HPV) ",
+        name: "Human papillomavirus (HPV) Female",
         needed: true,
         age: 21,
         gender: null,
@@ -164,11 +164,11 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: "2-3 doses depending on age at initial vaccination",
+        dose: "2-3 doses for adults women who are between 19 to 26 year old at initial vaccination",
         date: new Date(Date.now())
     },
     {
-        name: "Human papillomavirus (HPV) ",
+        name: "Human papillomavirus (HPV) Male",
         needed: true,
         age: 30,
         gender: null,
@@ -184,7 +184,7 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: "2-3 doses depending on age at initial vaccination",
+        dose: "2-3 doses for adults men who are between 19 to 22 year old at initial vaccination",
         date: new Date(Date.now())
     },
     {
@@ -224,7 +224,7 @@ const vaccineSeed = [
         zoster: true,
         pregnancy: true,
         cd4below200: true,
-        dose: "1 dose",
+        dose: "1 dose at any age depending on additional risk factors on indicaion",
         date: new Date(Date.now())
     },
     {

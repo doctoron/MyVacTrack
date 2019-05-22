@@ -30,7 +30,9 @@
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
-    "seed": "node scripts/seedDB.js",
+    "seed-users": "node scripts/seedDB.js",
+    "seed-records": "node scripts/recordsDB",
+    "seed-vaccines": "node scripts/vaccinesDB.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
