@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Redirect } from "react-router-dom"
 import Axios from 'axios';
+import FluidJumbo from '../FluidJumbo/index';
 import RoundAbout from '../RoundAbout/RoundAbout';
+// import Cards from '../Cards/cards';
 import {
   Button,
   Form,
@@ -11,7 +13,7 @@ import {
   Modal,
   ModalHeader,
   ModalBody,
-  ModalFooter
+  ModalFooter,
 } from 'reactstrap';
 
 export default class Login extends Component {
@@ -82,24 +84,25 @@ export default class Login extends Component {
       })
   }
 
-  setRedirect = ()=> {
+  setRedirect = () => {
     this.setState({
       redirect: true
     })
   }
 
-  renderRedirect = ()=> {
-    if(this.state.redirect){
+  renderRedirect = () => {
+    if (this.state.redirect) {
       return <Redirect to="/register" />
     }
   }
+
+
   render () {
-    console.log('Login Modal as props', this.props.showModal);
     return (
       <div>
         {this.props.showModal &&
           <Modal isOpen={this.state.modal} className={this.props.className}>
-            <ModalHeader toggle={this.toggle.bind(this)}>MyVacTRACK-2 Login</ModalHeader>
+            <ModalHeader toggle={this.toggle.bind(this)}>MyVacTRACK Login</ModalHeader>
             <ModalBody>
               <Form>
                 <FormGroup>
@@ -124,6 +127,7 @@ export default class Login extends Component {
           </Modal>
         }
         <RoundAbout />
+        <FluidJumbo />
       </div>
     )
   }

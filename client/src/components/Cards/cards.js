@@ -1,25 +1,34 @@
 import React from 'react';
 import {
-  Card, Button, CardImg, CardTitle, CardText,
-  CardSubtitle, CardBody
+  Card, 
+  Button, 
+  CardTitle, 
+  CardText, 
+  Row, 
+  Col
 } from 'reactstrap';
-// import image1 from '../../img/jump.jpg'
-// import image2 from '../../img/jump.jpg'
+// import image1 from '../../img/puzzle-sm.jpg'
+// import image2 from '../../img/globe-hands-sm.jpg'
 // import image3 from '../../img/jump.jpg'
 
 const Cards = (props) => {
   return (
-    <div>
-      <Card>
-        <CardImg top width="100%" src={image1} alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Card title</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-          <Button>Button</Button>
-        </CardBody>
-      </Card>
-    </div>
+    <Row>
+      <Col sm="6">
+        <Card body>
+          <CardTitle>What Vaccines do YOU need?</CardTitle>
+          <CardText></CardText>
+          <Button href="https://www2.cdc.gov/nip/adultimmsched/" target="_blank">Take the Quiz</Button>
+        </Card>
+      </Col>
+      <Col sm="6">
+        <Card body>
+          <CardTitle>What Other Vaccines do YOU need?</CardTitle>
+          <CardText></CardText>
+          <Button href="http://apps.who.int/worldimmunizationweek/" target="_blank">Test Your Knowledge</Button>
+        </Card>
+      </Col>
+    </Row>
   );
 };
 

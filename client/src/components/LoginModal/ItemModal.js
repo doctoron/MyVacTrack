@@ -9,9 +9,6 @@ import {
     ModalBody,
     ModalFooter
 } from 'reactstrap';
-
-// import {Forms} from '../Forms';
-import { Login } from '../LoginModal/Login';
 import PropTypes from 'prop-types';
 
 class RegisterModal extends Component {

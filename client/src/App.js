@@ -10,7 +10,8 @@ import {
 import MenuBar from './components/MenuBar';
 import Login from './components/LoginModal/Login';
 import PrivateRoute from './components/Auth/PrivateRoute';
-import PVRec2 from './Pages/PVRec';
+import vaccineList from './components/RenderVacs/vaccineList'
+// import PVRec2 from './Pages/PVRec';
 import Register from './components/Register';
 // import RoundAbout from './components/RoundAbout';
 // import { Jumbotron, Button, Alert, Fade } from 'reactstrap';
@@ -60,9 +61,9 @@ class App extends Component {
               <Route exact path="/" component={Login} />
               <Route exact path="/login" component={() => <Login history={this.props.history} showModal={this.state.isOpen} toggle={this.toggle} />} />
               <Route path="/register" component={Register} />
-              <Route path="/test" component={PVRec2} />
+              <Route path="/test" component={vaccineList} />
               {/* <PrivateRoute path="/private" component={PVRec} /> */}
-              <PrivateRoute path="/private" component={PVRec2} />
+              <PrivateRoute path="/private" component={vaccineList} />
             </Switch>
 
           </div>

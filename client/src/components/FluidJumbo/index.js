@@ -1,20 +1,16 @@
 import React from 'react';
-import { Jumbotron, Container, Row, Col } from 'reactstrap';
+import { Jumbotron, Container } from 'reactstrap';
 import Cards from '../Cards/cards.js';
 
 const FluidJumbo = (props) => {
   return (
-    // <div>
+    <div>
       <Jumbotron fluid>
         <Container fluid>
-          <Row>
-            <Col sm="4"><Cards /></Col>
-            <Col sm="4"><Cards /></Col>
-            <Col sm="4"><Cards /></Col>
-          </Row>
+          {<Cards />}
         </Container>
       </Jumbotron>
-    // </div>
+    </div>
   );
 };
 

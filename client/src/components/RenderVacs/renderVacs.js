@@ -1,17 +1,7 @@
 import React from 'react';
 import Axios from 'axios';
-// import myVaccines from '../constants/vaccines';
 import moment from 'moment';
 import {
-    Button,
-    Form,
-    Label,
-    FormGroup,
-    Input,
-    Modal,
-    ModalHeader,
-    ModalBody,
-    ModalFooter,
     ListGroup,
     ListGroupItem
 } from 'reactstrap';
@@ -48,17 +38,6 @@ handleSubmit = (event) => {
 }
 
 const renderVacs = () => {
-    // Process the record
-    // const age = calcAge(myUsers.dob);
-    // let result = myUsers.filter(obj => {
-    //     return obj.dob === 6
-    //   })
-    //   console.log(result)
-    // testUser.find(dob => x.id === '45').foo;
-    // console.log(`This person is ${age} years old.`);
-    // const neededVaccines = vaccines.filter(vaccines => vaccines.age < age);
-    // const vaccinesName = neededVaccines.map(vaccines => vaccines.name, vaccines.dose)
-    // const vaccinesDose = neededVaccines.map(vaccinesDose => vaccines.name)
     return (
         <div>Your Personal Vaccination Recommendation
             <ListGroup>

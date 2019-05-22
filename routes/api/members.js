@@ -8,9 +8,9 @@ router.route("/")
   .post(Members.create);
 
 // Matches with "/api/Members/:id"
-// router.route("/:id")
-//   .get(Members.findById)
-//   .put(Members.update)
-//   .delete(Members.remove);
+router.route("/:id")
+  .get(Members.findById)
+  .put(Members.update)
+  .delete(Members.remove);
 
 module.exports = router;

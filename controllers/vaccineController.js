@@ -1,12 +1,12 @@
 const Vaccines = require('../models/Vaccines');
 // Defining methods for the vaccineController
 module.exports = {
-    findUser: (req, res) => {
+    find: (req, res) => {
         console.log('Direct body coming in', req.body);
         Vaccines.find({
             // name: req.body.name,
-            needed: req.body.needed,
-            age: req.body.age
+            // needed: req.body.needed,
+            // age: req.body.age
         }).then((data) => {
             console.log('This is what was returned', data);
             // if (!Array.isArray(data) || !data.length) {
@@ -23,7 +23,7 @@ module.exports = {
             .catch(err => res.status(422).json(err));
     },
     create: (req, res) => {
-        console.log('rea.body', req.body);
+        console.log('req.body', req.body);
         Vaccines
             .create(req.body)
             .then(dbModel => res.json(dbModel))

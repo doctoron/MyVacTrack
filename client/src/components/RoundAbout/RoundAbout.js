@@ -7,23 +7,23 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
-import image1 from "../../img/puzzle1.jpg"; // Tell Webpack this JS file uses this image
-import image2 from '../../img/VT-Logo.jpg';
+import image1 from "../../img/VacTRACK-Logo.jpg"; // Tell Webpack this JS file uses this image
+import image2 from '../../img/puzzle3.jpg';
 import image3 from '../../img/adult-celebrate.jpg';
 
 const items = [
   {
-    src:  image1,
-    altText: 'Immunization Puzzle',
-    caption:  '#vaccineswork',
-    captionText: ''
-  },
-  {
-    src: image2,
+    src: image1,
     altText: 'VackTRACK Logo',
     caption: '',
     captionText: '#vaccineswork'
 
+  },
+  {
+    src:  image2,
+    altText: 'Immunization Puzzle',
+    caption:  '#vaccineswork',
+    captionText: ''
   },
   {
     src: image3,
