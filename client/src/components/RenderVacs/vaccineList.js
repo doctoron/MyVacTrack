@@ -9,7 +9,7 @@ import {
 
 const Vaccines = props => (
     <tr>
-        <td>{props.vaccines.name}</td>
+        <td>{<a href="">{props.vaccines.name}</a>}</td>
         <td>{props.vaccines.dose}</td>
         <td>
             <Link to={"/edit/" + props.vaccines._id}>Edit</Link>
