@@ -9,21 +9,21 @@
   },
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "bootstrap": "^4.3.1",
-    "express": "^4.16.3",
+    "express": "^4.17.1",
     "express-favicon": "^2.0.1",
     "if-env": "^1.0.4",
     "moment": "^2.24.0",
     "mongo": "^0.1.0",
-    "mongoose": "^5.5.5",
+    "mongoose": "^5.5.15",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-datepicker": "^2.5.0",
+    "react-datepicker": "^2.7.0",
     "react-dom": "^16.8.6",
-    "react-icons": "^3.6.1",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.0.0",
+    "react-icons": "^3.7.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "reactstrap": "^8.0.0"
   },
   "scripts": {
@@ -32,7 +32,7 @@
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "seed-users": "node scripts/seedDB.js",
-    "seed-records": "node scripts/recordsDB",
+    "seed-records": "node scripts/recordsDB.js",
     "seed-vaccines": "node scripts/vaccinesDB.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
@@ -42,6 +42,6 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
+    "nodemon": "^1.19.1"
   }
 }
