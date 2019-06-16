@@ -4,15 +4,17 @@ import Axios from 'axios';
 import {
     Table,
     CardBody,
+    Button
 
 } from 'reactstrap';
 
 const Vaccines = props => (
     <tr>
-        <td>{<a href="">{props.vaccines.name}</a>}</td>
+        {/* <td>{<a href="#">{props.vaccines.name}</a>}</td> */}
+        <td><Button outline color='info'>{props.vaccines.name}</Button></td>
         <td>{props.vaccines.dose}</td>
         <td>
-            <Link to={"/edit/" + props.vaccines._id}>Edit</Link>
+            <Link to={"/edit/" + props.vaccines._id}>View/Edit</Link>
         </td>
     </tr>
 )
