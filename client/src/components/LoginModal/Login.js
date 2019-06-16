@@ -3,7 +3,6 @@ import { Redirect } from "react-router-dom"
 import Axios from 'axios';
 import FluidJumbo from '../FluidJumbo/index';
 import RoundAbout from '../RoundAbout/RoundAbout';
-// import Cards from '../Cards/cards';
 import {
   Button,
   Form,
