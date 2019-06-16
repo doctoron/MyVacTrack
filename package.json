@@ -9,11 +9,7 @@
   },
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^0.18.1",
-=======
-    "axios": "^0.19.0",
->>>>>>> d9fdf1052d82ea02878e7d530ab18678b22f84d0
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
@@ -28,12 +24,7 @@
     "react-icons": "^3.7.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.0.1",
-<<<<<<< HEAD
     "reactstrap": "^8.0.0"
-=======
-    "reactstrap": "^8.0.0",
-    "update": "^0.7.4"
->>>>>>> d9fdf1052d82ea02878e7d530ab18678b22f84d0
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
