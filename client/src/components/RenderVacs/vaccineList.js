@@ -11,17 +11,10 @@ import {
 const Vaccines = props => (
     <tr>
         {/* <td>{<a href="#">{props.vaccines.name}</a>}</td> */}
-<<<<<<< HEAD
-        <td><Button outline color='danger'>{props.vaccines.name}</Button></td>
-        <td>{props.vaccines.dose}</td>
-        <td>
-            <Link to={"/edit/" + props.vaccines._id}>New Date</Link>
-=======
         <td><Button outline color='info'>{props.vaccines.name}</Button></td>
         <td>{props.vaccines.dose}</td>
         <td>
             <Link to={"/edit/" + props.vaccines._id}>View/Edit</Link>
->>>>>>> afc1b121fa17090b1b600abbe124c0c3304b5943
         </td>
     </tr>
 )
