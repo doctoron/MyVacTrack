@@ -7,6 +7,7 @@ import Login from './components/Login/Login';
 import PrivateRoute from './components/Auth/PrivateRoute';
 import vaccineList from './components/RenderVacs/vaccineList'
 import Register from './components/Register';
+import Error from './Pages/Error';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -52,6 +53,7 @@ class App extends Component {
             <Route exact path="/login" component={() => <Login history={this.props.history} showModal={this.state.isOpen} toggle={this.toggle} exact />} />
             <Route exact path="/register" component={Register} />
             <PrivateRoute exact path="/private" component={vaccineList} />
+            <Route component={Error} />
           </Switch>
         </div>
       </Router>
