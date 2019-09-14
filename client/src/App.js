@@ -49,9 +49,9 @@ class App extends Component {
           <MenuBar auth={this.state.authenticated} toggle={this.toggle} />
           <Switch>
             <Route exact path="/" component={Login} />
-            <Route path="/login" component={() => <Login history={this.props.history} showModal={this.state.isOpen} toggle={this.toggle} exact />} />
-            <Route path="/register" component={Register} />
-            <PrivateRoute path="/private" component={vaccineList} />
+            <Route exact path="/login" component={() => <Login history={this.props.history} showModal={this.state.isOpen} toggle={this.toggle} exact />} />
+            <Route exact path="/register" component={Register} />
+            <PrivateRoute exact path="/private" component={vaccineList} />
           </Switch>
         </div>
       </Router>
