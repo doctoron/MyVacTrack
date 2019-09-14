@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
+import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  HashRouter as Router,
-  Route,
-  Switch,
-} from "react-router-dom";
+
 import MenuBar from './components/MenuBar';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/Auth/PrivateRoute';
 import vaccineList from './components/RenderVacs/vaccineList'
 import Register from './components/Register';
 
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   constructor (props) {
@@ -51,7 +48,7 @@ class App extends Component {
         <div className="container">
           <MenuBar auth={this.state.authenticated} toggle={this.toggle} />
           <Switch>
-            <Route path="/" component={Login} exact />
+            <Route exact path="/" component={Login} />
             <Route path="/login" component={() => <Login history={this.props.history} showModal={this.state.isOpen} toggle={this.toggle} exact />} />
             <Route path="/register" component={Register} />
             <PrivateRoute path="/private" component={vaccineList} />
