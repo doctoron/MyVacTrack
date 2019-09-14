@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 }
 if (process.env.MONGODB_URI) {
-  // This executes if being connected in Heroku App
+  // This executes if being connected in Heroku App 
   mongoose.connect(process.env.MONGODB_URI || "mongodb://vcuser:a6.8Bp!.pRacx@ds261486.mlab.com:61486/heroku_prw9cm58");
 } else {
   // Connect to the Mongo DB

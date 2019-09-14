@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch,
 } from "react-router-dom";
 import MenuBar from './components/MenuBar';
-import Login from './components/LoginModal/Login';
+import Login from './components/Login/Login';
 import PrivateRoute from './components/Auth/PrivateRoute';
 import vaccineList from './components/RenderVacs/vaccineList'
 import Register from './components/Register';
@@ -47,22 +47,18 @@ class App extends Component {
 
   render () {
     return (
-      <div className="container">
-        <Router>
-          <div>
-            <MenuBar auth={this.state.authenticated} toggle={this.toggle} />
-            <Switch>
-              <Route exact path="/" component={Login} />
-              <Route exact path="/login" component={() => <Login history={this.props.history} showModal={this.state.isOpen} toggle={this.toggle} />} />
-              <Route path="/register" component={Register} />
-              <PrivateRoute path="/private" component={vaccineList} />
-              {/* <Route path="/test" component={vaccineList} /> */}
-            </Switch>
+      <Router basename="/" >
+        <div className="container">
+          <MenuBar auth={this.state.authenticated} toggle={this.toggle} />
+          <Switch>
+            <Route path="/" component={Login} exact />
+            <Route path="/login" component={() => <Login history={this.props.history} showModal={this.state.isOpen} toggle={this.toggle} exact />} />
+            <Route path="/register" component={Register} />
+            <PrivateRoute path="/private" component={vaccineList} />
+          </Switch>
+        </div>
+      </Router>
 
-          </div>
-        </Router>
-
-      </div>
     );
   }
 }

@@ -14,6 +14,8 @@
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
     "gh-pages": "^2.1.1",
+    "heroku": "^7.29.0",
+    "heroku-cli": "^7.0.9",
     "if-env": "^1.0.4",
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
